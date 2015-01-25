@@ -1,0 +1,55 @@
+* {
+	border: 0;
+	box-sizing: inherit;
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+	}
+
+html {
+	box-sizing: border-box;
+	font-size: 16px;
+	}
+
+body {
+	font-family: sans-serif;
+	}
+
+h1 {
+	font-size: 3rem;
+	margin: 1rem auto 1rem;
+	}
+
+header {
+	padding: .5rem;
+	}
+
+
+/* -- IDs -- */
+
+#app {
+	padding: .5rem;
+	}
+
+#btn-loop {
+	display: inline-block;
+	height: 5rem;
+	width: 5rem;
+	}
+
+#btn-play-pause {
+	display: inline-block;
+	height: 5rem;
+	width: 5rem;
+	}
+
+#btn-replay {
+	display: inline-block;
+	height: 5rem;
+	width: 5rem;
+	}
+
+
+/* -- Classes -- */
+
+
