@@ -19,15 +19,15 @@ function keyControl(e) {
 	var keyCode = e.keyCode;
 	// console.log('keycode ' + keyCode + ' ' + String.fromCharCode(keyCode));
 	if (keyCode == 32) {
-		if (player.paused == false) {
-			player.pause();
-			btnPlayPause.innerHTML = 'Play';
-			console.log('Music paused');
-			}
-		else {
+		if (player.paused == true) {
 			player.play();
 			btnPlayPause.innerHTML = 'Pause';
 			console.log('Music playing');
+			}
+		else if (player.paused == false) {
+			player.pause();
+			btnPlayPause.innerHTML = 'Play';
+			console.log('Music paused');
 			}
 		}
 	else if (keyCode == 82) {
@@ -64,15 +64,15 @@ function loop() {
 	}
 
 function playPause() {
-	if (player.paused == false) {
-		player.pause();
-		btnPlayPause.innerHTML = 'Play';
-		console.log('Music paused');
-		}
-	else {
+	if (player.paused == true) {
 		player.play();
 		btnPlayPause.innerHTML = 'Pause';
 		console.log('Music playing');
+		}
+	else if (player.paused == false) {
+		player.pause();
+		btnPlayPause.innerHTML = 'Play';
+		console.log('Music paused');
 		}
 	}
 
