@@ -49,6 +49,12 @@ header {
 	width: 5rem;
 	}
 
+#player {
+	display: block;
+	margin-bottom: 1rem;
+	margin-top: 1rem;
+	}
+
 
 /* -- Classes -- */
 
