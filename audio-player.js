@@ -51,10 +51,12 @@ function playerHideShow() {
 	if (playerVisible == true) {
 		player.setAttribute('class', 'player-hide');
 		playerVisible = false;
+		console.log('Player hidden');
 		}
 	else if (playerVisible == false) {
 		player.setAttribute('class', 'player-show');
 		playerVisible = true;
+		console.log('Player visible');
 		}
 	}
 
