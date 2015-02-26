@@ -53,6 +53,17 @@ header {
 	display: block;
 	}
 
+#sleep {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	}
+
+#sleep p {
+	color: rgb(220, 220, 220);
+	padding: 1rem;
+	}
+
 
 /* -- Classes -- */
 

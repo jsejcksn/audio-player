@@ -5,6 +5,7 @@
 var btnLoop = document.getElementById('btn-loop');
 var btnPlayPause = document.getElementById('btn-play-pause');
 var btnReplay = document.getElementById('btn-replay');
+var btnSleep = document.getElementById('sleep');
 var player = document.getElementById('player');
 var playerVisible = true;
 var title = document.getElementById('title');
@@ -80,12 +81,34 @@ function replay() {
 	console.log('Music playing from start');
 	}
 
+function sleep() { // Improve UX by using a better input and show a countdown timer
+	var sleepStr = prompt('Minutes until pause');
+	var sleepMin = parseInt(sleepStr, 10);
+	if (isNaN(sleepMin)) {
+		console.log('"' + sleepStr + '" is not a valid number of minutes. Try again.');
+		return;
+		}
+	else
+		var sleepTime = (sleepMin * 1000 * 60);
+		btnSleep.removeEventListener('click', sleep);
+		btnSleep.firstChild.innerHTML = 'Sleep mode On';
+		console.log('Sleeping in ' + sleepMin + ' minutes');
+		setTimeout(
+			function() {
+				player.pause();
+				btnPlayPause.innerHTML = '<img src="buttons/play.svg" alt="Play" />';
+				console.log('Music paused');
+				}
+			, sleepTime);
+	}
+
 
 // EventListeners ----------
 
 btnLoop.addEventListener('click', loop);
 btnPlayPause.addEventListener('click', playPause);
 btnReplay.addEventListener('click', replay);
+btnSleep.addEventListener('click', sleep);
 player.addEventListener('ended', endOfAudio);
 title.addEventListener('click', playerHideShow);
 document.addEventListener('keydown', keyControl);
