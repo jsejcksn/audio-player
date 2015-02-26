@@ -15,6 +15,10 @@ body {
 	font-family: sans-serif;
 	}
 
+button:focus {
+	outline: 0;
+	}
+
 h1 {
 	font-size: 3rem;
 	margin: 1rem auto 1rem;
@@ -31,21 +35,9 @@ header {
 	padding: .5rem;
 	}
 
-#btn-loop {
+#btn-loop, #btn-play-pause, #btn-replay {
+	background-color: white;
 	display: inline-block;
-	height: 5rem;
-	width: 5rem;
-	}
-
-#btn-play-pause {
-	display: inline-block;
-	height: 5rem;
-	width: 5rem;
-	}
-
-#btn-replay {
-	display: inline-block;
-	height: 5rem;
 	width: 5rem;
 	}
 

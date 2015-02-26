@@ -11,7 +11,7 @@ var btnPlayPause = document.getElementById('btn-play-pause');
 // Functions ----------
 
 function endOfAudio() {
-	btnPlayPause.innerHTML = 'Play';
+	btnPlayPause.innerHTML = '<img src="buttons/play.svg" alt="Play" />';
 	console.log('Music stopped');
 	}
 
@@ -21,30 +21,30 @@ function keyControl(e) {
 	if (keyCode == 32) {
 		if (player.paused == true) {
 			player.play();
-			btnPlayPause.innerHTML = 'Pause';
+			btnPlayPause.innerHTML = '<img src="buttons/pause.svg" alt="Pause" />';
 			console.log('Music playing');
 			}
 		else if (player.paused == false) {
 			player.pause();
-			btnPlayPause.innerHTML = 'Play';
+			btnPlayPause.innerHTML = '<img src="buttons/play.svg" alt="Play" />';
 			console.log('Music paused');
 			}
 		}
 	else if (keyCode == 82) {
 		player.currentTime = 0;
 		player.play();
-		btnPlayPause.innerHTML = 'Pause';
+		btnPlayPause.innerHTML = '<img src="buttons/pause.svg" alt="Pause" />';
 		console.log('Music playing from start');
 		}
 	else if (keyCode == 70) {
 		if (player.loop == true) {
 			player.loop = false;
-			btnLoop.innerHTML = 'Loop';
+			btnLoop.innerHTML = '<img src="buttons/loop-off.svg" alt="Loop" />';
 			console.log('Looping off');
 			}
 		else if (player.loop == false) {
 			player.loop = true;
-			btnLoop.innerHTML = 'Turn off Loop';
+			btnLoop.innerHTML = '<img src="buttons/loop-on.svg" alt="Turn off Loop" />';
 			console.log('Looping on');
 			}
 		}
@@ -53,12 +53,12 @@ function keyControl(e) {
 function loop() {
 	if (player.loop == true) {
 		player.loop = false;
-		btnLoop.innerHTML = 'Loop';
+		btnLoop.innerHTML = '<img src="buttons/loop-off.svg" alt="Loop" />';
 		console.log('Looping off');
 		}
 	else if (player.loop == false) {
 		player.loop = true;
-		btnLoop.innerHTML = 'Turn off Loop';
+		btnLoop.innerHTML = '<img src="buttons/loop-on.svg" alt="Turn off Loop" />';
 		console.log('Looping on');
 		}
 	}
@@ -66,12 +66,12 @@ function loop() {
 function playPause() {
 	if (player.paused == true) {
 		player.play();
-		btnPlayPause.innerHTML = 'Pause';
+		btnPlayPause.innerHTML = '<img src="buttons/pause.svg" alt="Pause" />';
 		console.log('Music playing');
 		}
 	else if (player.paused == false) {
 		player.pause();
-		btnPlayPause.innerHTML = 'Play';
+		btnPlayPause.innerHTML = '<img src="buttons/play.svg" alt="Play" />';
 		console.log('Music paused');
 		}
 	}
@@ -79,7 +79,7 @@ function playPause() {
 function replay() {
 	player.currentTime = 0;
 	player.play();
-	btnPlayPause.innerHTML = 'Pause';
+	btnPlayPause.innerHTML = '<img src="buttons/pause.svg" alt="Pause" />';
 	console.log('Music playing from start');
 	}
 
@@ -96,3 +96,5 @@ document.addEventListener('keydown', keyControl);
 // Execute ----------
 
 console.log('\n\n- Keyboard Shortcuts -\n\nPlay/Pause\n| Space |\n\nReplay\n| R |\n\nLooping On/Off\n| F |\n \n ');
+btnLoop.innerHTML = '<img src="buttons/loop-on.svg" alt="Turn off Loop" />';
+btnLoop.innerHTML = '<img src="buttons/loop-off.svg" alt="Loop" />';
