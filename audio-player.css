@@ -21,11 +21,14 @@ button:focus {
 
 h1 {
 	font-size: 3rem;
-	margin: 1rem auto 1rem;
+	margin: 1rem auto;
 	}
 
 header {
+	background-color: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
 	padding: .5rem;
+	text-align: center;
 	}
 
 
@@ -33,6 +36,11 @@ header {
 
 #app {
 	padding: .5rem;
+	text-align: center;
+	}
+
+#controls {
+	margin: 1rem auto;
 	}
 
 #btn-loop, #btn-play-pause, #btn-replay {
@@ -43,11 +51,16 @@ header {
 
 #player {
 	display: block;
-	margin-bottom: 1rem;
-	margin-top: 1rem;
 	}
 
 
 /* -- Classes -- */
 
+.player-hide {
+	height: 0;
+	width: 0;
+	}
 
+.player-show {
+	margin: 1rem auto;
+	}
