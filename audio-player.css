@@ -44,7 +44,7 @@ header {
 	}
 
 #btn-loop, #btn-play-pause, #btn-replay {
-	background-color: white;
+	background-color: rgb(255, 255, 255);
 	display: inline-block;
 	width: 5rem;
 	}
