@@ -14,3 +14,6 @@ Replay (from beginning)
 
 Looping On/Off  
 `F`
+
+Player Hide/Show  
+`H`
