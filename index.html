@@ -1,37 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="utf-8" />
-	<meta name="application-name" content="Audio Player">
-	<meta name="description" content="Audio Player">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="application-name" content="Audio Player" />
+	<meta name="description" content="Audio Player" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	
 	<title>Audio Player</title>
 	
 	<link rel="stylesheet" href="audio-player.css" />
 	
 	<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-</head>
+	</head>
 
 <body>
+	<header>
+		<h1 id="title">Audio Player</h1>
+		</header>
+  
+	<div id="app">
+		<audio id="player" class="player-show" controls preload="auto" src="audio/audio.mp3"></audio>
+		
+		<div id="controls">
+			<button id="btn-replay"><img src="buttons/replay.svg" alt="Replay" /></button>
+			<button id="btn-play-pause"><img src="buttons/play.svg" alt="Play" /></button>
+			<button id="btn-loop"><img src="buttons/loop-off.svg" alt="Loop" /></button>
+			</div>
+		</div>
+	
+	<div id="sleep"><p>Zzz...</p></div>
+	
+	<script src="audio-player.js"></script>
+	</body>
 
-<header>
-	<h1 id="title">Audio Player</h1>
-</header>
-
-<div id="app">
-	<audio id="player" class="player-show" controls preload="auto" src="audio/audio.mp3"></audio>
-
-	<div id="controls">
-		<button id="btn-replay"><img src="buttons/replay.svg" alt="Replay" /></button>
-		<button id="btn-play-pause"><img src="buttons/play.svg" alt="Play" /></button>
-		<button id="btn-loop"><img src="buttons/loop-off.svg" alt="Loop" /></button>
-	</div>
-</div>
-
-<div id="sleep"><p>Zzz...</p></div>
-
-<script src="audio-player.js"></script>
-
-</body>
 </html>
