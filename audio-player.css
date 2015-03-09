@@ -32,6 +32,18 @@ header {
 	}
 
 
+/* -- Classes -- */
+
+.player-hide {
+	height: 0;
+	width: 0;
+	}
+
+.player-show {
+	margin: 1rem auto;
+	}
+
+
 /* -- IDs -- */
 
 #app {
@@ -62,16 +74,4 @@ header {
 #sleep p {
 	color: rgb(220, 220, 220);
 	padding: 1rem;
-	}
-
-
-/* -- Classes -- */
-
-.player-hide {
-	height: 0;
-	width: 0;
-	}
-
-.player-show {
-	margin: 1rem auto;
 	}
