@@ -1,15 +1,4 @@
-* {
-	border: 0;
-	box-sizing: inherit;
-	font-weight: normal;
-	margin: 0;
-	padding: 0;
-	}
-
-html {
-	box-sizing: border-box;
-	font-size: 16px;
-	}
+/* Audio Player */
 
 body {
 	font-family: sans-serif;
@@ -20,14 +9,14 @@ button:focus {
 	}
 
 h1 {
-	font-size: 3rem;
-	margin: 1rem auto;
+	font-size: 4.8rem;
+	margin: 1.6rem auto;
 	}
 
 header {
 	background-color: rgb(0, 0, 0);
 	color: rgb(255, 255, 255);
-	padding: .5rem;
+	padding: .8rem;
 	text-align: center;
 	}
 
@@ -40,25 +29,25 @@ header {
 	}
 
 .player-show {
-	margin: 1rem auto;
+	margin: 1.6rem auto;
 	}
 
 
 /* -- IDs -- */
 
 #app {
-	padding: .5rem;
+	padding: .8rem;
 	text-align: center;
 	}
 
 #controls {
-	margin: 1rem auto;
+	margin: 1.6rem auto;
 	}
 
 #btn-loop, #btn-play-pause, #btn-replay {
 	background-color: rgb(255, 255, 255);
 	display: inline-block;
-	width: 5rem;
+	width: 8rem;
 	}
 
 #player {
@@ -73,5 +62,5 @@ header {
 
 #sleep p {
 	color: rgb(220, 220, 220);
-	padding: 1rem;
+	padding: 1.6rem;
 	}
