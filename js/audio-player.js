@@ -1,5 +1,7 @@
 // Web audio player
 
+var audioPlayer = (function() {
+
 // Variables ----------
 
 var btnLoop = document.getElementById('btn-loop');
@@ -112,3 +114,5 @@ document.addEventListener('keydown', keyControl);
 console.log('\n\n- Keyboard Shortcuts -\n\nPlay/Pause\n| Space |\n\nReplay\n| R |\n\nLooping On/Off\n| F |\n\nPlayer Hide/Show\n| H |\n \n ');
 btnLoop.innerHTML = '<img src="buttons/loop-on.svg" alt="Turn off Loop" />';
 btnLoop.innerHTML = '<img src="buttons/loop-off.svg" alt="Loop" />';
+
+}());
