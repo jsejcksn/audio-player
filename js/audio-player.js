@@ -1,6 +1,6 @@
 // Web audio player
 
-var audioPlayer = (function() {
+(function() {
 
   // Variables ----------
 
