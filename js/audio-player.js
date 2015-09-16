@@ -1,6 +1,7 @@
 // Web audio player
 
 (function() {
+  'use strict';
 
   // Variables ----------
 
