@@ -83,6 +83,7 @@
     var sleepMin = parseInt(sleepStr, 10);
     if (isNaN(sleepMin)) {
       console.log('"' + sleepStr + '" is not a valid number of minutes. Try again.');
+      alert('"' + sleepStr + '" is not a valid number of minutes. Try again.');
       return;
     } else {
       var sleepTime = (sleepMin * 1000 * 60);
