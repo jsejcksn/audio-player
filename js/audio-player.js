@@ -88,7 +88,7 @@
     } else {
       var sleepTime = (sleepMin * 1000 * 60);
       btnSleep.removeEventListener('click', sleep);
-      btnSleep.firstChild.innerHTML = 'Sleep mode On';
+      btnSleep.querySelector('p').innerHTML = 'Sleep mode On';
       console.log('Sleeping in ' + sleepMin + ' minutes');
       setTimeout(
         function() {
